@@ -1,11 +1,35 @@
-          
-          <div *ngIf="usersData">
+<br><br><br><br>
+<br><br><br><br>
+<div class="container">
+<form [formGroup]="nameForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label class="form-label">First Name</label>
+    <input type="text" formControlName="firstName" class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Last Name</label>
+    <input type="text" formControlName="lastName" class="form-control" />
+  </div>
+  <button type="submit" class="btn btn-primary">Validate</button>
+</form>
+<br><br><br><br><br><br><br><br>
+<div *ngIf="submitted">
+  <h3>Result:</h3>
+  <p>First Name: {{ nameForm.get('firstName')?.value }}</p>
+  <p>Last Name: {{ nameForm.get('lastName')?.value }}</p>
+</div>
+
+</div>
+<br><br><br><br>
+<br><br><br><br>
+
+        <!--   <div *ngIf="usersData">
             <ul>
               <li *ngFor="let user of usersData">
                 {{ user.id }} --- {{ user.name }} --- {{ user.email }}
               </li>
             </ul>
-          </div>
+          </div> -->
           
 
         
