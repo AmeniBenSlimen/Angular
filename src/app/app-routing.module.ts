@@ -6,6 +6,7 @@ import { NavbarComponent } from './Navbar/navbar.component';
 import { DesignComponent } from './design/design.component';
 import { DeployComponent } from './deploy/deploy.component';
 import { DevelopComponent } from './develop/develop.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   { path: '', component: DomComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'design', component: DesignComponent },
   { path: 'deploy', component: DeployComponent },
   { path: 'develop', component: DevelopComponent },
+  { path: 'about', component: AboutComponent}
   // Définissez d'autres routes ici si nécessaire
 ];
 
