@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DatabaseService } from '../services/database.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-dom',
@@ -18,6 +19,7 @@ export class DomComponent {
   constructor( private db:DatabaseService){
   
   }
+  
   get(){
     this.db.getData().subscribe({
       next: (next) => console.log(next),

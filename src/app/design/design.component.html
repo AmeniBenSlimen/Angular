@@ -1,39 +1,11 @@
-<html>
-  <head>
- 
-  </head>
-  <body>
 
-
-    <br><br><br><br><br><br>
-
-    <div class="supporting">
-      <div class="container">
-        <div class="col">
-          <img src="">
-          <h2></h2>
-          <p></p>
-          <a routerLink="/design" class="btn-default"></a>
           
-        </div>
-        <div class="col">
-          <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/design.svg">
-          <h2>Design</h2>
-          <p>Make your projects look great and interact beautifully.</p>
-          <a routerLink="/design" class="btn-default">Learn More</a>
+          <div *ngIf="usersData">
+            <ul>
+              <li>
+                {{ usersData.id }} --- {{ usersData.name }} --- {{ usersData.email }}
+              </li>
+            </ul>
+          </div>
           
-        </div>
-        <div class="col">
-          <img src="">
-          <h2></h2>
-          <p></p>
-          <a routerLink="/deploy" class="btn-default"></a>
-          
-        </div>
-      </div>
-      <div class="clearfix"></div>
-    </div>
-
-    
-  </body>
-</html>
+        
