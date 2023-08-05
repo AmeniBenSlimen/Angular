@@ -1,39 +1,11 @@
-<html>
-  <head>
- 
-  </head>
-  <body>
-
-
-    <br><br><br><br><br><br>
-
-    <div class="supporting">
-      <div class="container">
-        <div class="col">
-          <img src="">
-          <h2></h2>
-          <p></p>
-          <a routerLink="/design" class="btn-default"></a>
           
-        </div>
-        <div class="col">
-          <img src="https://s3.amazonaws.com/codecademy-content/projects/broadway/deploy.svg">
-          <h2>Deploy</h2>
-          <p>Use modern tools to turn your design into a web site</p>
-          <a routerLink="/deploy" class="btn-default">Learn More</a>
+          <div *ngIf="usersData">
+            <ul>
+              <li *ngFor="let user of usersData">
+                {{ user.id }} --- {{ user.name }} --- {{ user.email }}
+              </li>
+            </ul>
+          </div>
           
-        </div>
-        <div class="col">
-          <img src="">
-          <h2></h2>
-          <p></p>
-          <a routerLink="/deploy" class="btn-default"></a>
-          
-        </div>
-      </div>
-      <div class="clearfix"></div>
-    </div>
 
-   
-  </body>
-</html>
+        
